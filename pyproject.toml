@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68,<82", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arta"
+version = "0.1.0"
+description = "Artifact-Robust Temporal Alignment for ECG R-peak, IBI, and heart-rate estimation under motion artifact."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Shovito Barua Soumma" }
+]
+keywords = [
+  "ECG",
+  "R-peaks",
+  "IBI",
+  "HRV",
+  "motion artifact",
+  "graph decoding",
+  "dynamic programming"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: Scientific/Engineering :: Medical Science Apps."
+]
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "matplotlib",
+  "wfdb"
+]
+
+[project.urls]
+Homepage = "https://github.com/shovito66/arta"
+Dashboard = "https://ibi-dashboard.streamlit.app/"
+
+[project.scripts]
+arta-run = "arta.cli:main"
+
+[tool.setuptools]
+packages = ["arta"]
+
+[tool.setuptools.package-data]
+arta = ["py.typed"]

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+outputs/
+full_data/
+.matplotlib_cache/
+.cache/
+*.log
+build/
+dist/
+*.egg-info/
