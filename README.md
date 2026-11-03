@@ -18,6 +18,12 @@ ARTA addresses these errors by treating multiple ECG detectors as weak evidence 
 
 ARTA builds an over-complete ECG R-peak candidate set, formulates candidate selection as a directed acyclic graph problem, and uses dynamic programming with beam search to recover a physiologically consistent beat sequence.
 
+## Preprint
+
+The ARTA preprint is available on arXiv:
+
+**[ARTA: Graph Combinatorial Optimization for Robust Interbeat Interval Estimation from Wearable Electrocardiogram Signals](https://arxiv.org/abs/2611.00011)**
+
 ## Dashboard
 
 ![Demo](assets/app-demo.webp)
@@ -220,18 +226,17 @@ python -m pip install git+https://github.com/shovito66/arta.git
 
 ## Citation
 
-Please cite the paper when using this code. Placeholder BibTeX:
+Please cite the ARTA preprint when using this code:
 
 ```bibtex
-@article{soumma_arta_ecg_2026,
-  title   = {Artifact-Robust Temporal Alignment for Robust ECG Inter-Beat Interval Estimation Under Motion Artifact},
-  author  = {Soumma, Shovito Barua and TODO},
-  journal = {TODO},
-  year    = {2026},
-  volume  = {TODO},
-  number  = {TODO},
-  pages   = {TODO},
-  doi     = {TODO}
+@misc{arta_2026,
+  title = {ARTA: Graph Combinatorial Optimization for Robust Interbeat Interval Estimation from Wearable Electrocardiogram Signals},
+  author = {Shovito Barua Soumma and Asiful Arefeen and Hassan Ghasemzadeh},
+  year = {2026},
+  eprint = {2611.00011},
+  archivePrefix = {arXiv},
+  primaryClass = {eess.SP},
+  url = {https://arxiv.org/abs/2611.00011}
 }
 ```
 
